@@ -1,0 +1,46 @@
+@import "../scss-variables";
+
+.success-pop-up{
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  z-index: -2;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 12px;
+}
+
+.success-pop-up{
+  p{
+    color: $dark-text-color;
+    font-size: 26px;
+  }
+}
+
+.active-pop-up{
+  animation: form-jumper .2s cubic-bezier(0.42, 0, 0.13, 1.29) forwards;
+}
+
+@keyframes form-jumper{
+  0%{
+    z-index: 50;
+    height: 500px;
+    width: 500px;
+    opacity: 0;
+  }
+
+  70%{
+    opacity: 1;
+  }
+  100%{
+    height: 600px;
+    width: 600px;
+    z-index: 50;
+    opacity: 1;
+  }
+}

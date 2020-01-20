@@ -1,0 +1,41 @@
+@import "../scss-variables";
+
+.prefer-number-email{
+  margin-left: 400px;
+  p{
+    color: white;
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    opacity: .8;
+    position: relative;
+    margin-right: 80px;
+
+    &:focus{
+      border: none;
+      outline: none;
+    }
+
+    &::before{
+      content: ' ';
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background-color: #cacaca;
+      top: calc(50% - 9px);
+      left: -26px;
+    }
+  }
+  .active-choice{
+    opacity: 1;
+    &::before{
+      background-color: $cta-color;
+    }
+  }
+}
