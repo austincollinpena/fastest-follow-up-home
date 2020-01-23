@@ -8,15 +8,15 @@ const initialState = {
 
 export const Store = createContext(initialState);
 
-export const StoreProvider = ({ children }) => {
+export const GlobalStoreProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
     return <Store.Provider value={{ state, dispatch }}>{children}</Store.Provider>
 };
 
 
-const changeIsActive = () => {
+const changeIsActive = (state) => {
     alert('hello');
-    return {isActive: "true"}
+    return {...state, isActive: "true"}
 };
 
 const resetChange = () => {

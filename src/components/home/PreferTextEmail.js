@@ -11,7 +11,7 @@ export const PreferTextEmail = ({changeToNumber, changeToEmail, isChoice}) => {
         >Email
         </button>
         <button
-            className={isChoice === "phone" && "active-choice"}
+            className={isChoice === "phone" ? "active-choice" : ""}
             onClick={() => changeToNumber()}>Texts</button>
       </div>
     </div>

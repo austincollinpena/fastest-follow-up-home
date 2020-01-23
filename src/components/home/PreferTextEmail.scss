@@ -1,11 +1,18 @@
 @import "../scss-variables";
 
 .prefer-number-email{
-  margin-left: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   p{
     color: white;
+    margin-top: 32px;
     font-size: 26px;
-    margin-bottom: 0;
+    margin-bottom: 12px;
+    margin-left: -102px;
   }
   button{
     background: none;
@@ -15,6 +22,9 @@
     opacity: .8;
     position: relative;
     margin-right: 80px;
+    cursor: pointer;
+    padding-left: 32px;
+
 
     &:focus{
       border: none;
@@ -29,7 +39,7 @@
       border-radius: 50%;
       background-color: #cacaca;
       top: calc(50% - 9px);
-      left: -26px;
+      left: 0;
     }
   }
   .active-choice{

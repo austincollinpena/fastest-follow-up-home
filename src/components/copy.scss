@@ -1,0 +1,28 @@
+@import "global-styles.scss";
+// Sizing
+
+.massive-text{
+  font-size: 59px;
+  line-height: 130%;
+}
+
+.subtitle{
+  font-size: 28px;
+  line-height: 150%;
+}
+
+// Properties
+
+.semi-bold{
+  font-weight: 600;
+}
+
+// Colors
+
+.white{
+  color: white;
+}
+
+.cta{
+  color: $cta-color;
+}

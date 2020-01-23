@@ -7,9 +7,9 @@ import { PreferTextEmail } from "./PreferTextEmail";
 import "../global-styles.scss";
 import { SuccessPopUp } from "../shared-components/SuccessPopUp";
 
-export const AlertBox = () => {
+export const AlertBox = ({showInputClass}) => {
   const [activeChoice, setActiveChoice] = useState("email");
-  const [popUpActive, setpopUpActive] = useState("false");
+  const [popUpActive, setpopUpActive] = useState(false);
 
   const changeToNumber = () => {
     setActiveChoice("phone");
@@ -25,8 +25,8 @@ export const AlertBox = () => {
 
   return (
     <div className="email-number-container">
-      <EmailForm isActive={activeChoice === "email" && true}  />
-      <NumberForm isActive={activeChoice === "phone" && true} showPopUp={showPopUp} />
+      <EmailForm isActive={activeChoice === "email" && true}  showPopUp={showPopUp} showInputClass={showInputClass}/>
+      <NumberForm isActive={activeChoice === "phone" && true} showPopUp={showPopUp} showInputClass={showInputClass}/>
       <PreferTextEmail
         changeToNumber={changeToNumber}
         changeToEmail={changeToEmail}

@@ -1,0 +1,14 @@
+#main-nav{
+  position: absolute;
+  right: 500px;
+  display: flex;
+  z-index: 2;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 26px;
+  .link{
+    margin-left: 42px;
+    cursor: pointer;
+  }
+}
+
