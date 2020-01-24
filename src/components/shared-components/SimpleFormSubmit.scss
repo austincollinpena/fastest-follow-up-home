@@ -28,6 +28,9 @@
     font-size: 26px;
     color: $dark-text-color;
     width: 404px;
+    transition: all .4s cubic-bezier(0.42, 0, 0, 1.02);
+    box-sizing: border-box;
+
   }
   button{
     background: $cta-color;
@@ -45,6 +48,7 @@
   transition: all .4s cubic-bezier(0.42, 0, 0, 1.02);
   input{
     border: 2px solid #FD5D6F;
+    transition: all .4s cubic-bezier(0.42, 0, 0, 1.02);
 
   }
 

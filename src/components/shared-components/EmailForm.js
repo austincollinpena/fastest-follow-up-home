@@ -21,7 +21,7 @@ const ADD_EMAIL = gql`
 export const EmailForm = ({ isActive, showPopUp, showInputClass }) => {
 
 
-    const [addTodo, {data}] = useMutation(ADD_EMAIL);
+    const [addEmail, {data}] = useMutation(ADD_EMAIL);
 
     return (
 
@@ -41,10 +41,10 @@ export const EmailForm = ({ isActive, showPopUp, showInputClass }) => {
                 return errors;
             }}
             onSubmit={(values, {setSubmitting}) => {
-                // showPopUp();
                 JSON.stringify(values, null, 2);
-                addTodo({variables: {email: values.email}});
+                addEmail({variables: {email: values.email}});
                 setSubmitting(false);
+                showPopUp();
             }}
         >
             {({isSubmitting}) => (

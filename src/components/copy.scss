@@ -6,8 +6,22 @@
   line-height: 130%;
 }
 
+.secondary-title{
+  font-size: 36px;
+  line-height: 130%;
+  color: $dark-text-color;
+}
+
 .subtitle{
   font-size: 28px;
+  line-height: 150%;
+  color: $dark-text-color;
+
+}
+
+.body-text{
+  font-size: 22px;
+  color: $dark-text-color;
   line-height: 150%;
 }
 
@@ -15,6 +29,14 @@
 
 .semi-bold{
   font-weight: 600;
+}
+
+.bold{
+ font-weight: bold;
+}
+
+.center{
+  text-align: center;
 }
 
 // Colors

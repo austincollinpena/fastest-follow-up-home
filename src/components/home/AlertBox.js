@@ -23,6 +23,10 @@ export const AlertBox = ({showInputClass}) => {
       setpopUpActive(true);
   };
 
+  const closePopUp = () => {
+      setpopUpActive(false);
+  };
+
   return (
     <div className="email-number-container">
       <EmailForm isActive={activeChoice === "email" && true}  showPopUp={showPopUp} showInputClass={showInputClass}/>
@@ -34,6 +38,7 @@ export const AlertBox = ({showInputClass}) => {
       />
       <SuccessPopUp
       popUpActive={popUpActive}
+      closePopUp={closePopUp}
       />
     </div>
   );
