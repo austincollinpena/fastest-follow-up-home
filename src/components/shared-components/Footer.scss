@@ -1,0 +1,15 @@
+@import "../scss-variables";
+
+
+.footer{
+  p{
+    text-align: center;
+    background: $neutral9;
+    margin: 0;
+    padding: 24px 24px;
+    a{
+      color: $primary-orange;
+    }
+  }
+
+}

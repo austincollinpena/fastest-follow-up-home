@@ -1,0 +1,40 @@
+@import "../scss-variables";
+
+// TODO: Image styline
+// TODO: UL/ LI Styling
+
+.blog-content{
+  line-height: 1.58;
+  color: white;
+h1{
+  font-size: 36px;
+}
+  h2{
+    font-size: 32px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  h4{
+    font-size: 24px;
+  }
+  h5{
+    font-size: 22px;
+  }
+  h6{
+    font-size: 22px;
+  }
+  p{
+    font-size: 21px;
+  }
+  li, ul, ol{
+    font-size: 21px;
+  }
+  a{
+    color: $primary-orange;
+  }
+  img{
+   max-width: 100%;
+  }
+
+}

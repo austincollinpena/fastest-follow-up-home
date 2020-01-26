@@ -44,6 +44,7 @@ export const EmailForm = ({ isActive, showPopUp, showInputClass }) => {
                 JSON.stringify(values, null, 2);
                 addEmail({variables: {email: values.email}});
                 setSubmitting(false);
+                values.email="";
                 showPopUp();
             }}
         >

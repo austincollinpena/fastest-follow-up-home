@@ -1,14 +1,47 @@
+@import "../layout.scss";
+@import "../scss-variables";
+
+.nav-container{
+  height: 0;
+  @include below-tablet-wide{
+    height: 140px;
+    filter: drop-shadow(0px 4px 80px rgba(18, 19, 27, 0.4));
+    z-index: 1;
+  }
+}
+
 #main-nav{
-  position: absolute;
-  right: 500px;
   display: flex;
-  z-index: 2;
   justify-content: flex-end;
   align-items: flex-end;
   margin-top: 26px;
+  grid-column: 2 / 3;
+  margin-left: auto;
+  z-index: 5;
+
+  @include below-tablet-wide{
+    grid-column: 1 / 4;
+    margin-right: auto;
+    margin-top: 0;
+    align-items: center;
+    background: $neutral10;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% calc(100% - 36px));
+    justify-content: center;
+    z-index: 5;
+
+  }
   .link{
-    margin-left: 42px;
     cursor: pointer;
+    margin-top: -6px;
+  }
+  .cta{
+    border: 2px solid $cta-color;
+    padding: 8px 26px;
+    border-radius: 6px;
+  }
+  a{
+    text-decoration: none;
   }
 }
 

@@ -1,9 +1,19 @@
 @import "global-styles.scss";
+@import "breakpoints.scss";
 // Sizing
 
 .massive-text{
   font-size: 59px;
   line-height: 130%;
+  @include customBreakPoint(1680){
+    font-size: 46px;
+  }
+}
+
+.blog-title{
+  font-size: 48px;
+  line-height: 130%;
+
 }
 
 .secondary-title{
@@ -16,6 +26,12 @@
   font-size: 28px;
   line-height: 150%;
   color: $dark-text-color;
+  @include customBreakPoint(1680){
+    font-size: 26px;
+  }
+  @include customBreakPoint(1520){
+    font-size: 24px;
+  }
 
 }
 
@@ -47,4 +63,8 @@
 
 .cta{
   color: $cta-color;
+}
+
+.orange{
+  color: $primary-orange;
 }

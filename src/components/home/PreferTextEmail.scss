@@ -1,4 +1,5 @@
 @import "../scss-variables";
+@import "../breakpoints";
 
 .prefer-number-email{
   margin-left: auto;
@@ -7,12 +8,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .button-container{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+  }
   p{
     color: white;
     margin-top: 32px;
     font-size: 26px;
     margin-bottom: 12px;
     margin-left: -102px;
+    @include below-tablet-wide{
+      margin-left: unset;
+    }
+    @include customBreakPoint(1520){
+      font-size: 22px;
+    }
+    @include below-tablet-wide{
+      font-size: 26px;
+      margin-top: 42px;
+    }
   }
   button{
     background: none;
@@ -24,6 +40,13 @@
     margin-right: 80px;
     cursor: pointer;
     padding-left: 32px;
+    @include customBreakPoint(1520){
+      font-size: 22px;
+    }
+    @include below-tablet-wide{
+      font-size: 26px;
+      margin-right: 0;
+    }
 
 
     &:focus{

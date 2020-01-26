@@ -10,7 +10,7 @@ export const HomePageContainer = ({ children }) => {
       <main className="home-page-grid">
         <div className="gray-bar" />
         <img alt="An Iphone" id="iphone" src={iphone} />
-        <div className="dark-background"/>
+        <div className="dark-background"><div/></div>
         <div className="home-headercontent-container">
           <h1 className="massive-text semi-bold white">
             You Can Close 35% More Home Advisor Leads, Easy

@@ -1,0 +1,125 @@
+$breakpoints: (
+        "phone-small": 374px,
+        "phone": 400px,
+        "phone-wide": 480px,
+        "phablet": 560px,
+        "tablet-small": 640px,
+        "tablet": 768px,
+        "below-tablet-wide": 1023px,
+        "tablet-wide": 1024px,
+        "desktop": 1248px,
+        "desktop-wide": 1440px
+);
+
+// Phones
+
+$phone-small: 374px;
+
+$phone: 400px;
+
+$phone-wide: 480px;
+
+$phablet: 560px;
+
+$tablet-small: 640px;
+
+$tablet: 768px;
+
+$below-tablet-wide: 1023px;
+
+$tablet-wide: 1024px;
+
+$below-desktop: 1247px;
+
+$desktop: 1248px;
+
+$desktop-wide: 1439px;
+
+$desktop-super-wide: 1660px;
+
+// Best Break points Desktop
+// 1920
+// 1680 x 1050
+// 1600 x 900
+// 1440  x 900
+// 1366 x  768
+// 1280 x 800
+
+@mixin phone-small {
+  @media (max-width: #{$phone-small}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin phone-wide {
+  @media (max-width: #{$phone-wide}) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media (max-width: #{$phablet}) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  @media (max-width: #{$tablet-small}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin below-tablet-wide {
+  @media (max-width: #{$below-tablet-wide}) {
+    @content;
+  }
+}
+
+@mixin tablet-wide {
+  @media (max-width: #{$tablet-wide}) {
+    @content;
+  }
+}
+
+@mixin below-desktop {
+  @media (max-width: #{$below-desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-wide {
+  @media (max-width: #{$desktop-wide}) {
+    @content;
+  }
+}
+
+@mixin desktop-super-wide {
+  @media (max-width: #{$desktop-super-wide}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin customBreakPoint($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}

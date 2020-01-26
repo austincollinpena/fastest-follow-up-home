@@ -1,4 +1,5 @@
 @import "../scss-variables.scss";
+@import "../breakpoints.scss";
 
 .simple-form{
   display: flex;
@@ -6,6 +7,11 @@
   position: relative;
   width: 740px;
   margin-top: 32px;
+  transition: .2s all;
+  @include customBreakPoint(1520) {
+    max-width: 600px;
+    width: unset;
+  }
   .inner-form{
     display: flex;
     width: 100%;
@@ -30,6 +36,16 @@
     width: 404px;
     transition: all .4s cubic-bezier(0.42, 0, 0, 1.02);
     box-sizing: border-box;
+    @include customBreakPoint(1520){
+      font-size: 22px;
+      width: 360px;
+    }
+    @include below-desktop{
+      width: 320px;
+    }
+    @include below-tablet-wide{
+      width: 340px;
+    }
 
   }
   button{
@@ -39,6 +55,13 @@
     font-size: 26px;
     padding: 0 52px;
     border-bottom-right-radius: 18px;
+    @include customBreakPoint(1520){
+      font-size: 22px;
+      width: 240px;
+    }
+    @include below-desktop{
+      padding: 0 22px;
+    }
   }
 }
 
