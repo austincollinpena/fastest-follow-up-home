@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6997345f.chunk.css",
+    "main.js": "/static/js/main.d6c6a631.chunk.js",
+    "main.js.map": "/static/js/main.d6c6a631.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.75022f1e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.75022f1e.js.map",
+    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
+    "static/js/2.8b440df0.chunk.js": "/static/js/2.8b440df0.chunk.js",
+    "static/js/2.8b440df0.chunk.js.map": "/static/js/2.8b440df0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.864520f4074ecab34ba77ae615763263.js": "/precache-manifest.864520f4074ecab34ba77ae615763263.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.6997345f.chunk.css.map": "/static/css/main.6997345f.chunk.css.map",
+    "static/js/2.8b440df0.chunk.js.LICENSE": "/static/js/2.8b440df0.chunk.js.LICENSE",
+    "static/media/angled-decoration.svg": "/static/media/angled-decoration.e36600ac.svg",
+    "static/media/background-left.svg": "/static/media/background-left.d23ddf01.svg",
+    "static/media/exit-mark.svg": "/static/media/exit-mark.6b0e9c27.svg",
+    "static/media/iphone.png": "/static/media/iphone.ceeaa171.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75022f1e.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.8b440df0.chunk.js",
+    "static/css/main.6997345f.chunk.css",
+    "static/js/main.d6c6a631.chunk.js"
+  ]
+}
