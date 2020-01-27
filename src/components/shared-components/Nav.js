@@ -1,23 +1,28 @@
 import React from "react";
 import "./Nav.scss";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { PropTypes } from "prop-types";
+
 
 export const Nav = ({ handleInputClass }) => {
   let location = useLocation();
-  console.log(location.pathname);
   // console.log(location[path]);
 
+
+
+
   return (
-    <div className="nav-container home-page-grid">
-      <nav id="main-nav">
+    <div className={`nav-container home-page-grid ${location.pathname !== "/" ? 'unset-height' : ''}`}>
+      <nav id='main-nav'
+           className={location.pathname !== "/" ? 'unset-clippath' : ""}>
         {location.pathname === "/" ? (
-          <p
+          <a
+              href='#sign-up'
             className="subtitle white cta link"
-            onClick={() => handleInputClass()}
+              onClick={() => handleInputClass()}
           >
             Sign Up For Beta
-          </p>
+          </a>
         ) : (
           <Link
             to="/"

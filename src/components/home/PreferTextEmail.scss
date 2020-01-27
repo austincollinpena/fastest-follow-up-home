@@ -11,7 +11,11 @@
   .button-container{
     width: 240px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    @include below-tablet-wide{
+      justify-content: space-between;
+
+    }
   }
   p{
     color: white;

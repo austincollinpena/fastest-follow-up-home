@@ -12,9 +12,19 @@
     max-width: 600px;
     width: unset;
   }
+  @include tablet{
+    max-width: unset;
+  }
   .inner-form{
     display: flex;
     width: 100%;
+    @include tablet{
+      justify-content: center;
+    }
+    @include tablet-small{
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   .error{
     color: white;
@@ -46,6 +56,18 @@
     @include below-tablet-wide{
       width: 340px;
     }
+    @include tablet{
+      width: 60%;
+      padding: 16px 14px 16px 38px;
+    }
+    @include tablet-small{
+      padding: 16px 14px 16px 16px;
+      width: 360px;
+      border-radius: 12px;
+    }
+    @include phone-wide{
+      width: 100%;
+    }
 
   }
   button{
@@ -61,6 +83,17 @@
     }
     @include below-desktop{
       padding: 0 22px;
+    }
+    @include tablet{
+      width: 40%;
+      padding: 0 52px;
+    }
+    @include tablet-small{
+      width: unset;
+      border-radius: 8px;
+      margin-top: 24px;
+      padding: 14px 82px;
+
     }
   }
 }

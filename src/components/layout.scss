@@ -19,6 +19,12 @@
     grid-template-columns: 1fr 600px 1fr;
   }
 
+  @include tablet{
+    grid-template-columns: 42px 1fr 42px;
+  }
+  @include phone{
+    grid-template-columns: 24px 1fr 24px;
+  }
 }
 
 

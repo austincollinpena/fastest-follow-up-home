@@ -1,4 +1,5 @@
 @import "../scss-variables";
+@import "../breakpoints";
 
 .success-pop-up{
   position: fixed;
@@ -35,24 +36,73 @@
 
 .active-pop-up{
   animation: form-jumper .4s cubic-bezier(0.42, 0, 0.13, 1.29) forwards;
+  @include customBreakPoint(900){
+    animation: tablet-form-jumper .4s cubic-bezier(0.42, 0, 0.13, 1.29) forwards;
+  }
+  @include phone-wide{
+    animation: mobile-form-jumper .4s cubic-bezier(0.42, 0, 0.13, 1.29) forwards;
+
+  }
+
+
 }
 
-@keyframes form-jumper{
-  0%{
+@keyframes form-jumper {
+  0% {
     z-index: 50;
     height: 500px;
     width: 500px;
     opacity: 0;
   }
 
-  70%{
+  70% {
     opacity: 1;
   }
-  100%{
+  100% {
     width: 600px;
     height: fit-content;
     z-index: 50;
     opacity: 1;
     padding: 60px;
+  }
+}
+
+@keyframes tablet-form-jumper {
+  0% {
+    z-index: 50;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+  100% {
+    width: 70%;
+    height: fit-content;
+    z-index: 50;
+    opacity: 1;
+    padding: 60px;
+  }
+}
+
+@keyframes mobile-form-jumper {
+  0% {
+    z-index: 50;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+  100% {
+    width: 70%;
+    height: fit-content;
+    z-index: 50;
+    opacity: 1;
+    padding: 60px 30px 30px 30px;
   }
 }

@@ -2,69 +2,85 @@
 @import "breakpoints.scss";
 // Sizing
 
-.massive-text{
+.massive-text {
   font-size: 59px;
   line-height: 130%;
-  @include customBreakPoint(1680){
+  @include customBreakPoint(1680) {
     font-size: 46px;
+  }
+  @include tablet{
+    font-size: 42px;
+  }
+  @include phone-wide{
+    font-size: 36px;
   }
 }
 
-.blog-title{
+.blog-title {
   font-size: 48px;
   line-height: 130%;
-
 }
 
-.secondary-title{
+.secondary-title {
   font-size: 36px;
   line-height: 130%;
   color: $dark-text-color;
+  @include desktop-wide {
+    font-size: 32px;
+  }
+  @include tablet-small{
+    font-size: 28px;
+  }
 }
 
-.subtitle{
+.subtitle {
   font-size: 28px;
   line-height: 150%;
   color: $dark-text-color;
-  @include customBreakPoint(1680){
+  @include customBreakPoint(1680) {
     font-size: 26px;
   }
-  @include customBreakPoint(1520){
+  @include customBreakPoint(1520) {
     font-size: 24px;
   }
-
+  @include tablet{
+    font-size: 22px;
+  }
 }
 
-.body-text{
+.body-text {
   font-size: 22px;
   color: $dark-text-color;
   line-height: 150%;
+  @include tablet{
+    font-size: 19px;
+  }
 }
 
 // Properties
 
-.semi-bold{
+.semi-bold {
   font-weight: 600;
 }
 
-.bold{
- font-weight: bold;
+.bold {
+  font-weight: bold;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
 // Colors
 
-.white{
+.white {
   color: white;
 }
 
-.cta{
+.cta {
   color: $cta-color;
 }
 
-.orange{
+.orange {
   color: $primary-orange;
 }

@@ -51,6 +51,9 @@
     margin-top: 48px;
     padding-bottom: 236px;
   }
+  @include tablet-small{
+    margin-top: 28px;
+  }
 
   h1 {
     margin-bottom: 20px;
@@ -82,6 +85,9 @@
     transform: translate(0, -154px);
     margin-left: auto;
     margin-right: auto;
+  }
+  @include phone{
+    max-width: 100%;
   }
 }
 

@@ -6,8 +6,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include below-tablet-wide{
+    margin-top: 0;
+  }
   a{
     text-decoration: none;
+    @include below-tablet-wide{
+      width: 80%;
+    }
+    @include phone-wide{
+      width: 80%;
+    }
   }
 }
 
@@ -16,7 +25,7 @@
   width: 934px;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: contain;
   border-radius: 8px;
   padding: 78px 140px 96px 140px;
   margin-bottom: 120px;
@@ -30,6 +39,16 @@
   }
   @include below-desktop{
     width: 742px;
+  }
+  @include below-tablet-wide{
+    width: 100%;
+    padding: 78px 100px 96px 100px;
+  }
+  @include tablet-small{
+    padding: 58px 80px 66px 80px;
+  }
+  @include phone-wide{
+    padding: 28px 40px 36px 40px;
   }
 
 
@@ -47,6 +66,12 @@
       right: -38px;
       width: 76px;
       height: 76px;
+    }
+    @include phone-wide{
+      width: 56px;
+      height: 56px;
+      right: -28px;
+
     }
   }
 
@@ -84,6 +109,9 @@
     text-align: center;
     height: 1px;
     margin: 0;
+    @include below-tablet-wide{
+      display: none;
+    }
   }
 }
 
@@ -94,6 +122,9 @@
       left: -44px;
       @include customBreakPoint(1560){
         left: -38px;
+      }
+      @include phone-wide{
+        left: -28px;
 
       }
     }

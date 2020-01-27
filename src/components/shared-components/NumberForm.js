@@ -42,7 +42,6 @@ export const NumberForm = ({ isActive, showPopUp, showInputClass}) => {
         // TODO: Set error for 404
         onSubmit={(values, { setSubmitting }) => {
           console.log("I ran");
-          alert(JSON.stringify(values, null, 2));
           setSubmitting(false);
             addNumber({ variables: { phone_number: `+1${values.number}` } });
             values.number = "";

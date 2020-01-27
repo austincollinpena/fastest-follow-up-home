@@ -10,7 +10,7 @@ function ScrollToTop({ history, children }) {
         return () => {
             unlisten();
         }
-    }, []);
+    }, [history]);
 
     return <Fragment>{children}</Fragment>;
 }
@@ -18,6 +18,6 @@ function ScrollToTop({ history, children }) {
 export default withRouter(ScrollToTop);
 
 ScrollToTop.propTypes = {
-    history: PropTypes.func.isRequired,
+    history: PropTypes.object.isRequired,
     children: PropTypes.element.isRequired,
 };

@@ -10,7 +10,7 @@ import ScrollToTop from "./components/helpers/ScrollToTop";
 
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
-import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {
   const [showInputClass, setShowInputClass] = useState(false);
@@ -20,7 +20,7 @@ function App() {
   };
 
   const client = new ApolloClient({
-    uri: "http://localhost:8000/graphql/"
+    uri: "https://backend.fastestfollowup.com/graphql/"
   });
 
   useEffect(() => {

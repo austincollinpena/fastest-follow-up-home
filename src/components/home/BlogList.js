@@ -25,10 +25,7 @@ const GET_BLOGS = gql`
 export const BlogList = () => {
   const { loading, error, data } = useQuery(GET_BLOGS, {
     onCompleted: data => {
-      console.log(data);
-      console.log(data.dateSortedBlogs.edges.map(item => item.node));
       const dataToMap = data.dateSortedBlogs.edges;
-      console.log(dataToMap);
     }
   });
   if (loading) return <p>Loading.....</p>;
