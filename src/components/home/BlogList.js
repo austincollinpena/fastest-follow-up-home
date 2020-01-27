@@ -1,10 +1,12 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
+import ApolloClient from 'apollo-boost';
 import { gql } from "apollo-boost";
 import "./blogs.scss";
 import {Link} from "react-router-dom"
 import backgroundRight from "../../media/angled-decoration.svg";
 import backgroundLeft from "../../media/background-left.svg";
+
 
 const GET_BLOGS = gql`
   {

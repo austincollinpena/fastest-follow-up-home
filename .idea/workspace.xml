@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d3b1f6c-4dd8-4052-bd28-e5cfda17d15b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gcloudignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/BlogCopy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogCopy.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/blog/BlogPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blog/blogpage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/blogpage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/copy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/copy.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/global-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global-styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/helpers/ScrollToTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/helpers/ScrollToTop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/BlogList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/BlogList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomePageContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomePageContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomePageContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomePageContainer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/PreferTextEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/PreferTextEmail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/PreferTextEmail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/PreferTextEmail.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/blogs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/blogs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared-components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared-components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared-components/Nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared-components/Nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared-components/NumberForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared-components/NumberForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared-components/SimpleFormSubmit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared-components/SimpleFormSubmit.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared-components/SuccessPopUp.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared-components/SuccessPopUp.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +87,7 @@
       <workItem from="1579585558033" duration="12123000" />
       <workItem from="1579684020788" duration="49026000" />
       <workItem from="1580023975367" duration="4000" />
-      <workItem from="1580057766057" duration="21613000" />
+      <workItem from="1580057766057" duration="25348000" />
     </task>
     <servers />
   </component>
